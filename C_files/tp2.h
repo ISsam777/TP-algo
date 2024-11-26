@@ -35,4 +35,6 @@ void InverserTab(char Tab[], char T[], int m) {
   T[ctr] = '\0';
 }
 
-void afficherTab(char T[], int m) { printf("%s", T); }
+void afficherTab(char T[], int m) { 
+  printf("%s", T); 
+}
