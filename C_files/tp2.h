@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 char *ChargerChaine(int n) {
-  char *str = (char *)malloc(n * (sizeof(char)));
-  fgets(str, n, stdin);
+  char *str = (char *)malloc((n+1) * (sizeof(char)));
+  fgets(str, n+1, stdin);
   return str;
 }
 

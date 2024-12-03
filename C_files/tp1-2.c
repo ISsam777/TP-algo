@@ -7,6 +7,8 @@ int main() {
   printf("donner n : ");
   scanf(" %d", &n);
 
+  // initializer la matrice
+
   for (int i = 0; i < n; i++) {
 
     for (int j = 0; j < n; j++) {
@@ -14,6 +16,7 @@ int main() {
       scanf("%d", &M[i][j]);
     }
   }
+  // afficher la matrice
   printf("aficher la matrice: \n");
   for (int i = 0; i < n; i++) {
 
@@ -24,6 +27,7 @@ int main() {
     printf("\n");
   }
 
+  // echanger la matrice
   for (int i = 0; i < n; i++) {
 
     for (int j = i + 1; j < n; j++) {
@@ -34,17 +38,8 @@ int main() {
 
     printf("\n");
   }
-  /**/
-  /*for (int i = 0; i < n; i++) {*/
-  /**/
-  /*  for (int j = 0; j < n; j++) {*/
-  /*    M[i][j] = N[i][j];*/
-  /*  }*/
-  /**/
-  /*  printf("\n");*/
-  /*}*/
-
-  printf("\nafficher la matrice apres echange: \n");
+  // aficher la matrice apres echange
+  printf("\nla matrice apres echange: \n");
 
   for (int i = 0; i < n; i++) {
 

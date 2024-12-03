@@ -4,18 +4,37 @@
 #include <stdlib.h>
 int main() {
   char *ch;
-  int s;
-  /*printf("veuillez saisir la taille maximale de la chaine : ");*/
-  /*scanf(" %d", &s);*/
-  ch = ChargerChaine(10);
+  int t;
+  // saiser la max de la matrice
+  //
+  printf("saisir la taille maximale de la chaine : ");
+  scanf("%d", &t);
+  getchar();
+
+  // chrger le chaine
+  //
+  ch = ChargerChaine(t);
   int m = longueur(ch);
+
+  // charger chaine en tab
+  //
   char Tab[m], T[m];
   ChargerTab(ch, Tab);
   printf("\n");
+
+  // afficher tab non inverser
+  //
   afficherTab(Tab, m);
   printf("\n");
+
+  // inverser et afficher Tab
+  //
   InverserTab(Tab, T, m);
   afficherTab(T, m);
+
+  // free ch
+  //
   free(ch);
+
   return 0;
 }
