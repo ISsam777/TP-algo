@@ -13,6 +13,7 @@ int main() {
 
   // chrger le chaine
   //
+  printf("charger chaine: \n");
   ch = ChargerChaine(t);
   int m = longueur(ch);
 
@@ -24,11 +25,13 @@ int main() {
 
   // afficher tab non inverser
   //
+  printf("afficher tab : \n");
   afficherTab(Tab, m);
   printf("\n");
 
   // inverser et afficher Tab
   //
+  printf("print chaine inverser: \n");
   InverserTab(Tab, T, m);
   afficherTab(T, m);
 
